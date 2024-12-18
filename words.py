@@ -1,4 +1,5 @@
-
-words = str(input())
 filehandle = open("words.txt", 'w')
-filehandle.write(words)
+for _ in range(5):
+    words = str(input())
+    filehandle.write(words+"\n")
+filehandle.close()
