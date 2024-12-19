@@ -1,8 +1,10 @@
+#make sure on readme to tell users to download pip install rich in terminal
 import random
 from rich import print
 from rich.color import Color
 filehandle = open("words.txt", 'r')
 print("Welcome to Wordle!")
+print("download pip install rich in the terminal before starting")
 print("You have 6 tries to guess the 5 letter word")
 print("Please enter your words below")
 a = filehandle.readlines()
