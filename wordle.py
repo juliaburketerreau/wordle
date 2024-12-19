@@ -7,11 +7,10 @@ a = filehandle.readlines()
 word = random.choice(a)
 for numguess in range (1,7):  
   guess = input().lower()
-
-if guess > 5:
-  print("5 letter words only")
-elif guess < 5:
-  print("5 letter words only")
+  if len(guess) > 5:
+   print("5 letter words only")
+  elif len(guess) < 5:
+   print("5 letter words only")
 
 for i in range (min (len(guess), 5)) and (max (len(guess), 5)):
   if guess[i] == word[i]:
