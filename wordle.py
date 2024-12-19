@@ -1,4 +1,5 @@
 import random
+from termcolor import color
 filehandle = open("words.txt", 'r')
 print("Welcome to Wordle!")
 print("You have 6 tries to guess the 5 letter word")
@@ -23,4 +24,4 @@ for i in range (guess):
   elif guess [i] in word:
     print(YELLOW + (guess[i]) + RESET, end="")
   else:
-    print(guess[i])
+    print(guess[i], end="")
