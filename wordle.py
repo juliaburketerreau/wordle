@@ -20,14 +20,16 @@ while redo:
     if len(guess) == 5:
       redo = False
       break
-
-for i in range (len(guess)):
+redo = True
+while redo:
+ for i in range (len(guess)):
   if guess[i] == word[i]:
     print("[green]" + (guess[i]) + "[/green]", end="")
   elif guess [i] in word:
     print("[yellow]" + (guess[i]) + "[/yellow]", end="")
   else:
     print(guess[i], end="")
-  
+  redo = True
   if guess == word:
     print("Congratulations!")
+  redo = False
