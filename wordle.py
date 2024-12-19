@@ -1,5 +1,5 @@
 import random
-
+from termcolour import coloured 
 filehandle = open("words.txt", 'r')
 print("Welcome to Wordle!")
 print("You have 6 tries to guess the 5 letter word")
@@ -8,6 +8,10 @@ a = filehandle.readlines()
 word = random.choice(a)
 for numguess in range (1,7):  
   guess = input().upper()
+   if len(guess) = 5:
+    continue
+    else:
+      print("word must be five letters")
   if guess == a:
     print("Congratulations!")
     break
