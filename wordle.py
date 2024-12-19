@@ -20,8 +20,8 @@ for numguess in range (1,7):
 
 for i in range (guess):
   if guess[i] == word[i]:
-    print(GREEN + (guess[i]) + RESET, end="")
+    print(colored(guess[i] 'green'), end="")
   elif guess [i] in word:
-    print(YELLOW + (guess[i]) + RESET, end="")
+    print(colored(guess[i] 'yellow'), end="")
   else:
     print(guess[i], end="")
