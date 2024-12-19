@@ -1,5 +1,6 @@
 import random
 from rich import print
+from rich.color import Color
 filehandle = open("words.txt", 'r')
 print("Welcome to Wordle!")
 print("You have 6 tries to guess the 5 letter word")
@@ -21,9 +22,8 @@ while redo:
       break
 
 for i in range (len(guess)):
-  print(word[i])
   if guess[i] == word[i]:
-    print(("[italic red]" + guess[i] + "[/italic red]",), end="")
+    print("[green]" + (guess[i]) + "[/green]", end="")
   elif guess [i] in word:
     print((guess[i],), end="")
   else:
