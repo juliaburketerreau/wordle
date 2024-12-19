@@ -25,9 +25,9 @@ for i in range (len(guess)):
   if guess[i] == word[i]:
     print("[green]" + (guess[i]) + "[/green]", end="")
   elif guess [i] in word:
-    print((guess[i],), end="")
+    print("[yellow]" + (guess[i]) + "[/yellow]", end="")
   else:
     print(guess[i], end="")
-
+  
   if guess == word:
     print("Congratulations!")
