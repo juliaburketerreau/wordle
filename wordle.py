@@ -32,6 +32,7 @@ while redo:
   else:
     print(guess[i], end="")
   redo = True
+  
   if guess == word:
     print("Congratulations!")
-  redo = False
+ break
