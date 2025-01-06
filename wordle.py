@@ -8,7 +8,7 @@ print("download pip install rich in the terminal before starting")
 print("You have 6 tries to guess the 5 letter word")
 print("Please enter your words below")
 a = filehandle.readlines()
-word = "Tests"
+word = "tests"
 #word = random.choice(a)
 redo = True
 while redo:
