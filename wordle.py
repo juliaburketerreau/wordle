@@ -34,5 +34,5 @@ while redo:
   redo = True
   
   if guess == word:
-    print("Congratulations!")
+    print("Congratulations!", end=" ")
  break
