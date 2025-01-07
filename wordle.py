@@ -33,6 +33,7 @@ for i in range (len(guess)):
     print(guess[i], end="")
     
   
-if guess == word:
-    print("[blue]\n" + "Congratulations! You got the wordle in [i]" + "[/blue]", end="")
+  if guess == word:
+    print("[blue]\n" + "Congratulations! You got the wordle!" + "[/blue]", end="")
+    break
     
