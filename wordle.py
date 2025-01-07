@@ -10,9 +10,10 @@ print("Please enter your words below")
 a = filehandle.readlines()
 word = "tests"
 #word = random.choice(a)
-guess = input().lower()
+
 attempt = True
 while attempt:
+  guess = input().lower()
   for i in range (len(guess)):
     if guess[i] == word[i]:
       print("[green]" + (guess[i]) + "[/green]", end="")
