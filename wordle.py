@@ -21,8 +21,8 @@ while attempt:
     else:
       print(guess[i], end="")
     attempt = True
-    if guess == word:
-      print("[blue]\n" + "Congratulations! You got the wordle!" + "[/blue]", end="")
+  if guess == word:
+      print("[blue]\n" + "Congratulations! You got the wordle!" + "[/blue]\n", end="")
       attempt = False
 redo = True
 while redo:
