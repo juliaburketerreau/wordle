@@ -4,7 +4,7 @@ from rich import print
 from rich.color import Color
 filehandle = open("words.txt", 'r')
 print("Welcome to Wordle!")
-print("download pip install rich in the terminal before starting")
+print("download 'pip install rich' in the terminal before starting")
 print("You have 6 tries to guess the 5 letter word")
 print("Please enter your words below")
 a = filehandle.readlines()
@@ -31,6 +31,7 @@ for i in range (len(guess)):
     print("[yellow]" + (guess[i]) + "[/yellow]", end="")
   else:
     print(guess[i], end="")
+    
   
 if guess == word:
     print("[blue]\n" + "Congratulations! You got the wordle in [i]" + "[/blue]", end="")
