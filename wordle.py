@@ -23,8 +23,7 @@ while attempt:
     attempt = True
     if guess == word:
       print("[blue]\n" + "Congratulations! You got the wordle!" + "[/blue]", end="")
-    attempt = False
-
+      attempt = False
 redo = True
 while redo:
   for numguess in range (1,7):  
