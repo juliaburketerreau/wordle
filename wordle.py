@@ -14,14 +14,15 @@ word = "tests"
 attempt = True
 while attempt:
   guess = input().lower()
-  for i in range (len(guess)):
-    if guess[i] == word[i]:
-      print("[green]" + (guess[i]) + "[/green]", end="")
-    elif guess [i] in word:
-      print("[yellow]" + (guess[i]) + "[/yellow]", end="")
-    else:
-      print(guess[i], end="")
-    attempt = True
+  for numguess in range (1,7): 
+    for i in range (len(guess)):
+      if guess[i] == word[i]:
+        print("[green]" + (guess[i]) + "[/green]", end="")
+      elif guess [i] in word:
+        print("[yellow]" + (guess[i]) + "[/yellow]", end="")
+      else:
+        print(guess[i], end="")
+      attempt = True
   if guess == word:
       print("[blue]\n" + "Congratulations! You got the wordle!" + "[/blue]\n", end="")
       attempt = False
