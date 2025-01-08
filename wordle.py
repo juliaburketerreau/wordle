@@ -26,8 +26,8 @@ while attempt:
         print(guess[i], end="")
       attempt = True
       if guess == word:
-      print("[blue]\n" + "Congratulations! You got the wordle!" + "[/blue]\n", end="")
-      attempt = False
+       print("[blue]\n" + "Congratulations! You got the wordle!" + "[/blue]\n", end="")
+       attempt = False
 
 
     
