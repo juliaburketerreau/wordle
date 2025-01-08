@@ -14,7 +14,7 @@ word = "tests"
 attempt = True
 while attempt:
   guess = input().lower()
-    for i in range (len(guess)):
+  for i in range (len(guess)):
       if guess[i] == word[i]:
         print("[green]" + (guess[i]) + "[/green]", end="")
       elif guess [i] in word:
