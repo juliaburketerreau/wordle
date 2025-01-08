@@ -18,7 +18,7 @@ while attempt:
     print("You did not get the wordle. The wordle was...", word)
     break
   guess = input('\n').lower()
-  for i in range (len(guess)):
+  for i in range (min(len(guess), 5)):
       if guess[i] == word[i]:
         print("[green]" + (guess[i]) + "[/green]", end="")
       elif guess [i] in word:
@@ -29,14 +29,6 @@ while attempt:
   if guess == word:
       print("[blue]\n" + "Congratulations! You got the wordle!" + "[/blue]\n", end="")
       attempt = False
-redo = True
-while redo:
-  for numguess in range (1,7):  
-    if len(guess) > 5:
-      print("5 letter words only")
-    elif len(guess) < 5:
-      print("5 letter words only")
-    redo = True
-    if len(guess) == 5:
-      redo = False
+
+
     
