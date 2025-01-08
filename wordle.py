@@ -15,7 +15,7 @@ attempt = True
 while attempt:
   counter = counter + 1
   if counter == 7:
-    print(word)
+    print(("You did not get the wordle. The wordle was..."word)
     break
   guess = input('\n').lower()
   for i in range (len(guess)):
