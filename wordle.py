@@ -10,10 +10,14 @@ print("Please enter your words below")
 a = filehandle.readlines()
 word = "tests"
 #word = random.choice(a)
-
+counter = 0
 attempt = True
 while attempt:
-  guess = input().lower()
+  counter = counter + 1
+  if counter == 7:
+    print(word)
+    break
+  guess = input('\n').lower()
   for i in range (len(guess)):
       if guess[i] == word[i]:
         print("[green]" + (guess[i]) + "[/green]", end="")
@@ -25,8 +29,6 @@ while attempt:
   if guess == word:
       print("[blue]\n" + "Congratulations! You got the wordle!" + "[/blue]\n", end="")
       attempt = False
-  if guess != word in range (1,7):
-    print("You did not get the wordle.")
 redo = True
 while redo:
   for numguess in range (1,7):  
