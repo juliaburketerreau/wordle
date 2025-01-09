@@ -12,11 +12,13 @@ word = random.choice(a)
 counter = 0
 attempt = True
 while attempt:
+  guess = input('\n').lower()
   counter = counter + 1
   if counter == 7 and guess != word:
     print("You did not get the wordle. The wordle was...", word)
     break
-  guess = input('\n').lower()
+  if guess == word:
+       print("[blue]\n" + "Congratulations! You got the wordle!" + "[/blue]\n", end="")
   for i in range (min(len(guess), 5)):
       if guess[i] == word[i]:
         print("[green]" + (guess[i]) + "[/green]", end="")
@@ -25,9 +27,6 @@ while attempt:
       else:
         print(guess[i], end="")
       attempt = True
-if guess == word:
-       print("[blue]\n" + "Congratulations! You got the wordle!" + "[/blue]\n", end="")
-       attempt = False
 
 
     
