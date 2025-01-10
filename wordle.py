@@ -16,7 +16,7 @@ while attempt:
   counter = counter + 1
   if counter == 6 and guess != word:
     print("You did not get the wordle. The wordle was...", word)
-  elif counter == 6 and guess == word:
+  if counter == 6 and guess == word:
     print("[blue]" + "Congratulations! You got the wordle!" + "[/blue]", end="")
     attempt = False
   for i in range (min(len(guess), 5)):
