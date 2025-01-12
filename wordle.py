@@ -24,5 +24,3 @@ while attempt:
         print("[yellow]" + (guess[i]) + "[/yellow]", end="")
       else:
         print(guess[i], end="")
-      
-    
