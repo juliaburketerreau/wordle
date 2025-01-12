@@ -25,7 +25,4 @@ while attempt:
       else:
         print(guess[i], end="")
       
-      if guess == word:
-        print("[blue]" + "Congratulations! You got the wordle!" + "[/blue]", end="")
-        break
     
