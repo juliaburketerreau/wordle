@@ -17,6 +17,8 @@ while attempt:
   if guess != word and counter == 6:
     print("You did not get the wordle. The wordle was...", word)
     attempt = False
+  if guess == word:
+        print("[blue]" + "Congratulations! You got the wordle!" + "[/blue]", end="")
   for i in range (min(len(guess), 5)):
       if guess[i] == word[i]:
         print("[green]" + (guess[i]) + "[/green]", end="")
