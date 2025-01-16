@@ -19,9 +19,9 @@ while attempt:
   guess = input('\n').lower()     
   counter = counter + 1
   if guess == word:
-      print("[blue]" + "Congratulations! You got the wordle in " + str(counter) + " guess/guesses!" + "[/blue]", end="")
-      attempt = True
-      break
+    print("[blue]" + "Congratulations! You got the wordle in " + str(counter) + " guess/guesses!" + "[/blue]", end="")
+    attempt = True
+    break
   if guess != word and counter == 6:
     print("You did not get the wordle. The wordle was...", word)
     attempt = False
