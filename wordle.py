@@ -22,6 +22,7 @@ while attempt:
   if guess == word:
       print("[blue]" + "Congratulations! You got the wordle in " + str(counter) + " guess/guesses!" + "[/blue]", end="")
       attempt = True
+      break
   if guess != word and counter == 6:
     print("You did not get the wordle. The wordle was...", word)
     attempt = False
