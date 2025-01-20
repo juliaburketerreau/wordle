@@ -12,7 +12,8 @@ print("if the letter is white, the letter is [red]not[/red] in the word")
 print("You have 6 tries to guess the 5 letter word")
 print("Please enter your words below")
 a = filehandle.readlines()
-word = random.choice(a)
+word = random.choice(a).strip()
+print(word)
 counter = 0
 attempt = True
 while attempt:
