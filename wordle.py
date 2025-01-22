@@ -35,7 +35,7 @@ while attempt:
       attempt = False
 #this loop is the most important, and it changes the colour of the letters. 
 #it checks to see if the letters match up (green), if the letter is in the word (yellow) and if the letter is not in word (gray)
-      for i in range (min(len(guess), 5)):
+  for i in range (min(len(guess), 5)):
         if guess[i] == word[i]:
           print("[green]" + (guess[i]) + "[/green]", end="")
         elif guess [i] in word:
